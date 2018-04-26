@@ -126,11 +126,11 @@ if(!isset($_SESSION['user'])){
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th>ID</th>
                                     <th>Ime</th>
                                     <th>Name</th>
                                     <th>status</th>
-                                    <th>state</th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -146,7 +146,7 @@ if(!isset($_SESSION['user'])){
                                         <td><?php echo $row['ime'] ?></td>
                                         <td><?php echo $row['name'] ?></td>
                                         <td><span class="badge badge-primary">Active</span></td>
-                                        <td><a href="./deleteDevice.php?id=<?php echo $row['iddevice'] ?>" class="btn btn-danger">Delete</button></td>
+                                        <td><a href="./deleteDevice.php?id=<?php echo $row['iddevice'] ?>" class="badge badge-delete">Delete</button></td>
 
                                     </tr>
 

@@ -1826,6 +1826,9 @@ textarea {
 .badge-primary {
   background-color: #5c4ac7;
 }
+.badge-delete {
+  background-color: #c74a4a;
+}
 .badge-warning {
   background-color: #ffb22b;
 }

@@ -129,6 +129,7 @@ if(!isset($_SESSION['user'])){
                                 var uluru = {lat: -25.363, lng: 131.044};
                                 map = new google.maps.Map(document.getElementById('map'), {
                                     zoom: 16,
+                                    icon:"car_icon.png",
                                     center: uluru
                                 });
                             }
@@ -224,6 +225,7 @@ if(!isset($_SESSION['user'])){
 
     function addMarker(location) {
         var marker = new google.maps.Marker({
+           icon:"images/car_icon.png",
             position: location,
             map: map
         });

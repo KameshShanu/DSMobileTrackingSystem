@@ -130,7 +130,7 @@ if(!isset($_SESSION['user'])){
                                     <th>Name</th>
                                     <th>username</th>
                                     <th>status</th>
-                                    <th>state</th>
+                                    <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -146,7 +146,7 @@ if(!isset($_SESSION['user'])){
                                         <td><?php echo $row['name'] ?></td>
                                         <td><?php echo $row['username'] ?></td>
                                         <td><span class="badge badge-primary">Active</span></td>
-                                        <td><a href="./deleteUser.php?id=<?php echo $row['iduser'] ?>" class="btn btn-danger">Delete</button></td>
+                                        <td><a href="./deleteUser.php?id=<?php echo $row['iduser'] ?>" class="badge badge-delete">Delete</button></td>
 
                                     </tr>
 
